@@ -1,0 +1,3 @@
+[submodule "sidecar-registration"]
+	path = sidecar-registration
+	url = https://github.com/ScaleIT-ORG/sidecar-registration-example.git
