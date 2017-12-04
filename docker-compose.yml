@@ -4,4 +4,8 @@ services:
     build: ./example/
     ports:
       - "3000:3000"
+  sidecarregistration:
+    build: ./sidecar-registration/
+    env_file:
+      - ./sidecar-registration/config.env
 
