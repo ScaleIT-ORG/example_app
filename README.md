@@ -8,7 +8,7 @@ This example application uses the ScaleIT Platform Essential App-Registry built 
 
 ## Architecture
 
-![Registration Sidecar Architecture Concept](https://raw.githubusercontent.com/ScaleIT-ORG/sidecar-registration-example/master/Resources/img/architecture.png)
+![Registration Sidecar Architecture Concept](https://github.com/ScaleIT-ORG/sidecar-registration-example/raw/master/Resources/Documentation/img/architecture.png)
 
 # Installation
 
