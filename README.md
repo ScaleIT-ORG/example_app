@@ -14,6 +14,8 @@ This example application uses the ScaleIT Platform Essential App-Registry built 
 
 	Hint: Clone this repo with --recursive to get all Submodules 
 	e.g. git clone --recursive https://github.com/ScaleIT-ORG/sidecar-registration-example.git
+        
+        If you have not already installed and started the app-registry-etcd, follow the guide here:  https://github.com/ScaleIT-ORG/sppe-app-registry-etcd
 
 ##  Usage
 
