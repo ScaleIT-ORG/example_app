@@ -1,11 +1,11 @@
 version: '3'
 services:
   example:
-    build: ./example/
+    build: ./Domain Software/simple-website-app/
     ports:
       - "3000:3000"
   sidecarregistration:
-    build: ./sidecar-registration/
+    build: ./Platform Sidecars/spsc-app-registration/
     env_file:
-      - ./sidecar-registration/config.env
+      - ./Platform Sidecars/spsc-app-registration/config.env
 
