@@ -32,3 +32,18 @@ This example application uses the ScaleIT Platform Essential App-Registry built 
 
 		- docker-compose build
 		- docker-compose up
+
+# How to use examples
+
+## Check etcd healt status:
+```curl -sb -H "Accept: application/json" "http://$ETCD_IP:49501/health"```
+
+The Json answer should contain an attribute `"health": "true"`
+
+## Set key/value pairs
+
+`curl -L -X PUT http://localhost:49501/v2/keys/Example1/url -d value="my.url.com"`
+
+## Delete entry with all sub-values
+
+`curl -L -X PUT "http://localhost:49501/v2/keys/Example1?recursive=true" -XDELETE`
