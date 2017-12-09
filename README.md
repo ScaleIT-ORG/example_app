@@ -44,6 +44,30 @@ The Json answer should contain an attribute `"health": "true"`
 
 `curl -L -X PUT http://localhost:49501/v2/keys/Example1/url -d value="my.url.com"`
 
+## Get all entries
+
+`http://localhost:49501/v2/keys?recursive=true`
+
+## Get specific entry
+
+`http://localhost:49501/v2/keys/Example1/url`
+
 ## Delete entry with all sub-values
 
 `curl -L -X PUT "http://localhost:49501/v2/keys/Example1?recursive=true" -XDELETE`
+
+## Get data with javascript
+
+```javascript
+var xhr = new XMLHttpRequest();
+xhr.open('GET', "http://localhost:49501/v2/keys?recursive=true", true); 
+xhr.send();
+xhr.onreadystatechange = processRequest;
+
+function processRequest(e) {
+    if (xhr.readyState == 4 && xhr.status == 200) {
+        var response = JSON.parse(xhr.responseText);
+		console.log(response);
+	}
+}
+```
