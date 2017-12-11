@@ -4,7 +4,9 @@ Sidecar Application Registration on ETCD Key/Value Store
 
 This repo shows how to add a simple sidecar application to your Main-application to register at ETCD (Key/Value Store https://coreos.com/etcd/ ) with Name, Icon and a little Description.
 
-This example application uses the ScaleIT Platform Essential App-Registry built with ETCD: https://github.com/ScaleIT-ORG/sppe-app-registry-etcd
+This example application uses the following components:
+* the ScaleIT Platform Essential App-Registry built with ETCD: https://github.com/ScaleIT-ORG/spe-app-registry-etcd
+* the ScaleIT Registration Side Car: https://github.com/ScaleIT-ORG/spsc-app-registration
 
 ## Architecture
 
